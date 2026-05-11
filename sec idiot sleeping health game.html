@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Dreamweaver's Workshop</title>
+</head>
+<body style="background-color: #0b1026; color: #d1d5db; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0;">
+
+    <div style="max-width: 700px; margin: 50px auto; background: linear-gradient(180deg, #161b33 0%, #0b1026 100%); border: 2px solid #4b5563; border-radius: 15px; box-shadow: 0 0 50px rgba(0,0,0,0.8); overflow: hidden;">
+        
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-bottom: 1px solid #4b5563; display: flex; justify-content: space-between; align-items: center;">
+            <span style="color: #93c5fd; font-weight: bold; letter-spacing: 1px;">🌙 NIGHT QUEST: SLEEP PREP</span>
+            <span style="font-size: 12px; color: #9ca3af;">[ HP: 100% | SLEEPINESS: 0% ]</span>
+        </div>
+
+        <div id="start" style="padding: 40px; text-align: center;">
+            <h1 style="color: #fde047; margin-bottom: 10px;">✨ The Dreamweaver's Workshop ✨</h1>
+            <p style="font-style: italic; color: #9ca3af;">"The moon is high, and the spirits are weaving your dreams. But they need your help to clear the room first."</p>
+            
+            <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #fde047; padding: 15px; text-align: left; margin: 30px 0;">
+                <b style="color: #fde047;">Paimon-Spirit:</b> 
+                "Hey Traveler! If you don't sleep now, your Resin won't refill and you'll be too tired for tomorrow's adventure! Let's complete the 5-minute 'Rest Ritual'!"
+            </div>
+
+            <a href="#step1" style="display: inline-block; background: #3b82f6; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s;">[ START THE RITUAL ]</a>
+        </div>
+
+        <div id="step1" style="display: none; padding: 40px; min-height: 400px;">
+            <h2 style="color: #60a5fa;">⚔️ STAGE 1: BATTLE THE BLUE-LIGHT MONSTER</h2>
+            <p>A glowing screen-beast is hovering in your hand! It feeds on your sleep hormones.</p>
+            <p><b>ACTION:</b> Put your actual phone down (or set this screen to its dimmest setting). Close your eyes for 30 seconds and imagine the screen-light fading into a soft campfire glow.</p>
+            
+            <div style="margin-top: 50px;">
+                <details style="cursor: pointer; background: #1f2937; padding: 10px; border-radius: 5px;">
+                    <summary><b>[ CLICK TO FINISH BREATHING ]</b></summary>
+                    <p style="color: #10b981;">+20% Sleepiness Gained! The monster has retreated.</p>
+                    <a href="#step2" onclick="document.getElementById('step1').style.display='none'; document.getElementById('step2').style.display='block';" style="color: #fde047;">[ MOVE TO THE NEXT ROOM ]</a>
+                </details>
+            </div>
+        </div>
+
+        <div id="step2" style="display: none; padding: 40px; min-height: 400px;">
+            <h2 style="color: #60a5fa;">🏺 STAGE 2: THE THOUGHT JAR</h2>
+            <p>Your head is full of "Tomorrow's Quests." They are buzzing like angry wasps inside your brain.</p>
+            <p><b>TASK:</b> Take a mental "Jar." Grab each worry about tomorrow—school, work, friends—and place them inside the jar. They will be safe there until morning.</p>
+            
+            <div style="margin-top: 30px;">
+                <p><i>Which worry are you putting in first?</i></p>
+                <form action="javascript:void(0);">
+                    <input type="text" placeholder="Type a worry here..." style="width: 80%; padding: 10px; background: #0b1026; border: 1px solid #4b5563; color: white; border-radius: 5px;">
+                </form>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <a href="#step3" onclick="document.getElementById('step2').style.display='none'; document.getElementById('step3').style.display='block';" style="display: inline-block; background: #3b82f6; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">[ SEAL THE JAR ]</a>
+            </div>
+        </div>
+
+        <div id="step3" style="display: none; padding: 40px; min-height: 400px;">
+            <h2 style="color: #60a5fa;">🧘 STAGE 3: THE MOONLIGHT STRETCH</h2>
+            <p>Your physical "Avatar" (your body) is tense from a day of traveling. We need to loosen the joints.</p>
+            <p><b>ACTION:</b> Sit on the edge of your bed. Drop your shoulders. Roll your neck slowly in a circle. Reach for the ceiling, then let your arms drop like wet noodles.</p>
+            
+            <div style="background: rgba(255,255,255,0.05); padding: 15px; margin: 20px 0; border-radius: 10px;">
+                <i>"Feel the tension leaving your fingers... your toes... your jaw..."</i>
+            </div>
+
+            <a href="#step4" onclick="document.getElementById('step3').style.display='none'; document.getElementById('step4').style.display='block';" style="color: #fde047; font-weight: bold; text-decoration: none;">[ MY BODY FEELS HEAVY (READY) ]</a>
+        </div>
+
+        <div id="step4" style="display: none; padding: 40px; min-height: 400px; text-align: center;">
+            <h2 style="color: #60a5fa;">🌱 STAGE 4: PLANTING THE DREAM SEED</h2>
+            <p>The Dreamweaver is ready to build your world. What kind of dream should they build tonight?</p>
+            
+            <table style="width: 100%; margin-top: 20px;">
+                <tr>
+                    <td><button onclick="document.getElementById('step4').style.display='none'; document.getElementById('end').style.display='block';" style="width: 100%; padding: 20px; cursor: pointer;">🏝️ Summer Island</button></td>
+                    <td><button onclick="document.getElementById('step4').style.display='none'; document.getElementById('end').style.display='block';" style="width: 100%; padding: 20px; cursor: pointer;">🐉 Dragon Flight</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="document.getElementById('step4').style.display='none'; document.getElementById('end').style.display='block';" style="width: 100%; padding: 20px; cursor: pointer;">🍰 Infinite Buffet</button></td>
+                    <td><button onclick="document.getElementById('step4').style.display='none'; document.getElementById('end').style.display='block';" style="width: 100%; padding: 20px; cursor: pointer;">✨ Magic Library</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="end" style="display: none; padding: 40px; text-align: center;">
+            <h1 style="color: #fde047;">QUEST COMPLETE!</h1>
+            <p>You have successfully prepared your mind and body for rest.</p>
+            <div style="font-size: 50px; margin: 20px;">😴</div>
+            <p style="color: #9ca3af;"><b>Final Message from the Dreamweaver:</b><br>"Your bed is a healing chamber. You have done enough today. Tomorrow is a new map to explore."</p>
+            
+            <hr style="border: 0; border-top: 1px solid #4b5563; margin: 30px 0;">
+            <p style="font-size: 12px;">The game will now close. Please turn off your light.</p>
+            <button onclick="window.close(); alert('Close the tab and sleep now!');" style="background: #ef4444; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">[ EXIT GAME & SLEEP ]</button>
+        </div>
+
+    </div>
+
+    <script>
+        // Start Game
+        document.querySelector('a[href="#step1"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('start').style.display = 'none';
+            document.getElementById('step1').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
+
+```
